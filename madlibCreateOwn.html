@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Lato" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="CSS/normalize">
+<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+<title>Madlib Madness</title>
+
+</head>
+<body>
+<header>
+    <h1>Madlib Madness</h1>
+    <nav>
+        <ul>
+            <li><a href="MadlibStart.html" class="selected">Play Sample Madlibs</a></li>
+            <li><a href="madlibCreateOwn.html">Create Your Own</a></li>
+            <li><a href="MadlibUserStart.html">Play Your Madlibs</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+<div style="text-align: center;"><h2>Create Your Own Madlib:</h2></div>
+
+<form action="madlibCreateFile.cgi">
+	<br>
+ Enter a name for your madlib file (please include the file extension .txt) <input maxlength="30" size="30" name="fileName">
+ 	  <br>
+ 	  <br>
+<p> Type your madlib into the textbox below. Place the words you would like to use as cues in curly braces (they look like this - {}). See sample below.</p>
+<div style="text-align: center;"> 
+<textarea name="formText" cols="20" wrap="hard"></textarea><br>
+ <input value="Create!" type="submit"><br>
+
+</div>
+<br>
+</form>
+ <p>Sample:</p>
+<img src="Screenshot.png" alt="madlib sample">
+</main>
+</body>
+</html>

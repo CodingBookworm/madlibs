@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Lato" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="CSS/normalize">
+<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+<title>Madlib Madness</title>
+
+</head>
+<body>
+<header>
+    <h1>Madlib Madness</h1>
+    <nav>
+        <ul>
+            <li><a href="MadlibStart.html" >Play Sample Madlibs</a></li>
+            <li><a href="madlibCreateOwn.html">Create Your Own</a></li>
+            <li><a href="MadlibUserStart.html" class="selected">Play Your Madlibs</a></li>
+        </ul>
+    </nav>
+</header>
+<br>
+<div style="text-align: center;"> 
+<form action="madlibtrial.cgi">
+{cueOptions}<br>
+<input name="pageID" type="hidden" value="{madlibName}">
+<input value="Create Madlib" type="submit">
+</form>
+</div>
+</body>
+</html>
